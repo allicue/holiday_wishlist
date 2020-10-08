@@ -7,23 +7,37 @@ User should be able to create a wishlist for the holiday season. Once created an
 ## Wireframes
 
 Desktop Version: 
+
   Homepage: https://wireframe.cc/vA95Nu
+
   Displays full navigation bar and countdown until Christmas
 
   View List: https://wireframe.cc/6roa8z
+
   Displays actual wishlist items with item name, url, price and any additional info needed.
 
+
 Tablet Version:
+
   Homepage: https://wireframe.cc/r6lP0r
+
   Layout will be the same but display will be a bit tighter.
+
   View List: https://wireframe.cc/XPkQME
+
   Items will be stacked instead of displayed side by side.
 
+
 Mobile Version:
+
   Homepage: https://wireframe.cc/I9XWk9
+
   Header/navbar will be centered to take up as much space as possible.
+
   View List: https://wireframe.cc/m8n2Vw
+
   Items will be stacked instead of displayed side by side.
+  
 
 ## Component Hierarchy
 
