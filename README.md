@@ -6,69 +6,118 @@ User should be able to create a wishlist for the holiday season. Once created an
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+Desktop Version: 
+  Homepage: https://wireframe.cc/vA95Nu
+  Displays full navigation bar and countdown until Christmas
+
+  View List: https://wireframe.cc/6roa8z
+  Displays actual wishlist items with item name, url, price and any additional info needed.
+
+Tablet Version:
+  Homepage: https://wireframe.cc/r6lP0r
+  Layout will be the same but display will be a bit tighter.
+  View List: https://wireframe.cc/XPkQME
+  Items will be stacked instead of displayed side by side.
+
+Mobile Version:
+  Homepage: https://wireframe.cc/I9XWk9
+  Header/navbar will be centered to take up as much space as possible.
+  View List: https://wireframe.cc/m8n2Vw
+  Items will be stacked instead of displayed side by side.
 
 ## Component Hierarchy
 
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+https://docs.google.com/presentation/d/1ky0sSAVREyHohjvp6-a6VsqiF_am2oKzWMw-IQuX74A/edit?usp=sharing
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+API Link: https://airtable.com/shrbX1r3bX6usJv4Z
+
+API Snippet:
+
+```
+{
+    "records": [
+        {
+            "id": "recO9gdC0cS2N6VHN",
+            "fields": {
+                "created-time": "2020-10-08T21:17:07.000Z",
+                "item-url": "https://www.everlane.com/products/womens-day-boot-reknit-bone?locale=US&utm_medium=cpc&utm_source=pla-google&utm_campaign=838139507&utm_content=385748...",
+                "price": 205,
+                "title": "White Boots",
+                "notes": "I'm a size 6.5 / 7!"
+            },
+            "createdTime": "2020-10-08T21:17:07.000Z"
+        },
+```
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
-
 #### MVP
 
-_These are examples only. Replace with your own MVP features._
+- Create/Utlize Airtable Data
+- Utlize React Router
+- Create Pull Request
+- Create Post Request
+- Create Delete Request
+- Utlize Flexbox
 
-- Find and use external api
-- Render data on page
-- Allow user to choose favorites
 
 #### PostMVP
 
-_These are examples only. Replace with your own Post-MVP features._
-
-- Add second API
-- Use local storage to save user favorites
+- Add Animation for Homepage Once Countdown Hits Zero Days
+- Create Put Request for Editing Wishlist Items
+- Add Feature that Crosses Out Items Once Someone Purchases An Item
+- Add Functionality for More Than One User (Ie. Account Information, Login, Personalization, etc)
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
-| Day        | Deliverable                                        | Status     |
-| ---------- | -------------------------------------------------- | ---------- |
-| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 13    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| July 14    | Pseudocode / actual code                           | Incomplete |
-| July 15    | Initial Clickable Model                            | Incomplete |
-| July 16    | MVP                                                | Incomplete |
-| July 17    | Presentations                                      | Incomplete |
+| Day    | Deliverable                                        | Status     |
+| ------ | -------------------------------------------------- | ---------- |
+| Oct 8  | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
+| Oct 9  | Project Approval                                   | Incomplete |
+| Oct 10 | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
+| Oct 13 | Actual code                                        | Incomplete |
+| Oct 14 | Initial Clickable Model                            | Incomplete |
+| Oct 14 | MVP                                                | Incomplete |
+| Oct 15 | Post-MVP                                           | Incomplete |
+| Oct 16 | Presentations                                      | Incomplete |
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Component                                         | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Creating Database/Inputing Base Info              |    H     |     .5 hrs     |     .5 hrs    |    0 hrs    |
+| Build Out Foundation HTML/JS                      |    L     |      1 hr      |     0hrs      |    0 hrs    |
+| Build Out Routes for Navbar                       |    H     |      3 hrs     |     0hrs      |    0 hrs    |
+| Create GET Request & Render to Page               |    H     |     2 hrs      |     0hrs      |    0 hrs    |
+| Create Form/Submit Button for Adding New Items    |    H     |      2 hrs     |     0hrs      |    0 hrs    |
+| Create POST Request to Add Items & Render to Page |    H     |     2 hrs      |     0hrs      |    0 hrs    |
+| Create DELETE Request to Delete Unwanted Items    |    M     |     3 hrs      |     0hrs      |    0 hrs    |
+| Basic CSS Styling                                 |    L     |      2 hrs     |     0hrs      |    0 hrs    |
+| Troubleshooting Flexbox                           |    H     |      3 hrs     |     0hrs      |    0 hrs    |
+| Create Countdown Component for Homepage           |    H     |     3 hrs      |     0hrs      |    0 hrs    |
+| Create Footer Component                           |    L     |     1 hrs      |     0hrs      |    0 hrs    |
+| Advance CSS Styling                               |    M     |     6 hrs      |     0hrs      |    0 hrs    |
+| Add Mobile & Table Breakpoints                    |    H     |     2 hrs      |     0hrs      |    0 hrs    |
+| Work on Post-MVP                                  |    H     |     4 hrs      |     0hrs      |    0 hrs    |
+| Lint Code / Organize File Structure               |    L     |     1 hr       |     0hrs      |    0 hrs    |
+| Total | NA | 35.5 hrs | .5 hrs | 0hrs |
 
 ## SWOT Analysis
 
 ### Strengths:
 
+Heading into project week, I know I have great time management skills, so I feel confident I'll meet my project deadlines on time. I also feel confident in styling.
+
 ### Weaknesses:
+
+I'm still adjusting to the syntax when writing out components in React so I'm anticpiating a lot of time spent trying to debug code. I plan on overcoming this by referencing previous lectures & homeworks, asking a friend for assistance and/or leaning on my squad lead for help.
 
 ### Opportunities:
 
+I think I can make a great base for an app that would be actually used by friends, family and others in real time once I learn how to implement user authentification. 
+
 ### Threats:
+
+I don't anticipate any threats arising, but worst case scenario would be my internet cutting out.
