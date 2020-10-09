@@ -38,7 +38,7 @@ Items will be stacked instead of displayed side by side.
 
 ## Component Hierarchy
 
-https://docs.google.com/presentation/d/1ky0sSAVREyHohjvp6-a6VsqiF_am2oKzWMw-IQuX74A/edit?usp=sharing
+https://i.imgur.com/3Ywp6CR.jpg
 
 ## API and Data Sample
 
