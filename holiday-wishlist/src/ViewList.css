@@ -1,0 +1,14 @@
+.wishlistcontainer{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.wishlistitem{
+  font-size: 25px;
+  background-color: teal;
+  width: 400px;
+  margin: 20px;
+  padding: 10px 10px 20px 30px;
+}
