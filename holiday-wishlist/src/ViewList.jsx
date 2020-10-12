@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import axios from "axios";
 import './ViewList.css'
 
-function ViewList() {
+function ViewList(props) {
   const [listItems, setListItems] = useState("")
   
   useEffect(() => {
@@ -25,16 +25,17 @@ function ViewList() {
     <div>
       <Switch>
       <Route path="/viewlist">
-          <h3>WISHLIST</h3>
+          <h2>WISHLIST</h2>
+          <h3>Click on the item you purchased to mark</h3>
 
           {listItems && 
           <div className="wishlistcontainer">
               {listItems.map((item) => 
                 <section className="wishlistitem">
-                  <p>Item: {item.fields.title}</p>
+                  <p className="itemtitle">Item: {item.fields.title}</p>
                   <p>Price: ${item.fields.price}</p>
                   <p>Comments: {item.fields.notes}</p>
-                  <a href={item.fields.itemurl}>PURCHASE HERE</a>
+                  <a href={item.fields.itemurl} target="_blank" className="purchasebutton">PURCHASE HERE</a>
                 </section>
               )}
             </div>

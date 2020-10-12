@@ -8,7 +8,20 @@
 .wishlistitem{
   font-size: 25px;
   background-color: teal;
+  color: black;
   width: 400px;
   margin: 20px;
   padding: 10px 10px 20px 30px;
+}
+
+.itemtitle {
+  font-weight: bold;
+}
+
+.purchasebutton {
+  background-color: black;
+  border-style: ridge;
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
 }

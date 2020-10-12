@@ -2,9 +2,12 @@ import React from 'react';
 import NavBar from './NavBar';
 import './App.css';
 import ViewList from './ViewList'
-import CountdownClocks from "./CountdownClocks"
+import CountdownClocks from "./CountdownChristmas"
 import { Route } from 'react-router-dom';
 import Footer from "./Footer"
+import EditList from './EditList';
+import CountdownHanukkah from './CountdownHanukkah'
+import CountdownChristmas from './CountdownChristmas';
 
 function Homepage(props) {
   return (
@@ -22,10 +25,10 @@ function Homepage(props) {
         <h2 className="countdownsubtitle">COUNTDOWN UNTIL</h2>
           <div className="countdowncontainer">
             <section className="christmascontainer">
-              <CountdownClocks /> 
+              <CountdownChristmas /> 
             </section>
             <section className="hanukkahcontainer">
-            <CountdownClocks />
+            <CountdownHanukkah />
             </section>
           </div>
       </div>
@@ -34,6 +37,9 @@ function Homepage(props) {
         <ViewList />
       </div>
 
+      <div>
+        <EditList />
+      </div>
       <div>
         {/* <Footer /> */}
       </div>
