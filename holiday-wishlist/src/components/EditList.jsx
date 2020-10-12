@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Route, Switch } from 'react-router-dom';
+import './EditList.css';
+import ViewList from './ViewList';
 import axios from "axios";
 
 function EditList(props) {
   const [title, setTitle] = useState("");
   const [notes, setNotes] = useState("");
-  const [price, setPrice] = useState("");
+  const [price, setPrice] = useState(0);
   const [url, setUrl] = useState("");
 
 
@@ -16,8 +18,8 @@ function EditList(props) {
     const fields = {
       title,
       notes,
-      price,
-      url,
+      price: parseFloat(price),
+      itemurl: url,
     };
 
   const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist`;
@@ -30,6 +32,8 @@ function EditList(props) {
       },
     }
   );
+  props.setFetchItems(!props.fetchItems);
+
   setTitle("");
   setNotes("");
   setPrice("");
@@ -40,13 +44,13 @@ function EditList(props) {
     <div>
       <Switch>
         <Route path="/editlist">
-          <h2>hello</h2>
-          <form className="update-form" onSubmit={handleSubmit} >
+          <h2>Add Item to List</h2>
+          <form className="add-item-form" onSubmit={handleSubmit} >
             <label htmlFor="title">Item:</label>
             <input
               name="title"
               type="text"
-              placeholder="Enter name of the item you would like."
+              placeholder="Name of the item you would like"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
@@ -54,7 +58,7 @@ function EditList(props) {
             <input
               name="notes"
               type="text"
-              placeholder="Write any notes you may have about product."
+              placeholder="Notes about product"
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
             />
@@ -62,7 +66,7 @@ function EditList(props) {
             <input
               name="price"
               type="number"
-              placeholder="Enter the cost of the product you would like."
+              placeholder="Cost of the product"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             />
@@ -70,14 +74,15 @@ function EditList(props) {
             <input
               name="url"
               type="url"
-              placeholder="Enter the link to the product you would like."
+              placeholder="Enter the link of the product"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
             />
-            <button type="submit">Submit Additional Item</button>
+            <button classNamme="add-item-button" type="submit">Submit Additional Item</button>
           </form>
+
         </Route>
-        </Switch>
+      </Switch>
     </div>
   );
 }
