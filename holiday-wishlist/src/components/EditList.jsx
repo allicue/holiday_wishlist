@@ -32,7 +32,7 @@ function EditList(props) {
       },
     }
   );
-  props.setFetchItems(!props.fetchItems);
+  props.setFetchItem(!props.fetchItem);
 
   setTitle("");
   setNotes("");
@@ -40,40 +40,22 @@ function EditList(props) {
   setUrl("");
   };
   
-  //GET REQUEST
-  const [listItems, setListItems] = useState("")
-  const [fetchItems, setFetchItems] = useState(false);
-
-  useEffect(() => {
-    const getListItems = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist`;
-      const response = await axios.get(airtableURL, {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-        },
-      });
-      setListItems(response.data.records);
-    };
-    getListItems();
-  }, [setFetchItems]);
-
   //DELETE REQUEST
-  const [deleted, setDeleted] = useState(false);
+  // const [deleted, setDeleted] = useState(false);
 
-  const handleDelete = async () => {
-    setDeleted(true);
-    setTimeout(async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist/`
-      await axios.delete(airtableURL, {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-        },
-      });
-      props.setFetchItems(!props.fetchItems);
-      console.log(props.setFetchItems)
-      setDeleted(false);
-    }, 1000);
-  };
+  // const handleDelete = async () => {
+  //   setDeleted(true);
+  //   setTimeout(async () => {
+  //     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist/${listItems.id}`
+  //     await axios.delete(airtableURL, {
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+  //       },
+  //     });
+  //     props.setFetchItems(!props.fetchItems);
+  //     setDeleted(false);
+  //   }, 1000);
+  // };
 
   return (
     <div>
@@ -113,13 +95,13 @@ function EditList(props) {
               value={url}
               onChange={(e) => setUrl(e.target.value)}
             />
-            <button classNamme="add-item-button" type="submit">Submit Additional Item</button>
+            <button className="add-item-button" type="submit">Submit Additional Item</button>
           </form>
 
           <h2 className="subheadereditlist">MANAGE LIST</h2>
-          {listItems && 
+          {props.listItems && 
           <div className="wishlistcontainer">
-              {listItems.map((item) => 
+              {props.listItems.map((item) => 
                 <section className="wishlistitem">
                   <p className="itemtitle">Item: {item.fields.title}</p>
                   <p>Price: ${item.fields.price}</p>
@@ -128,7 +110,7 @@ function EditList(props) {
                     target="_blank"
                     className="purchasebutton">PURCHASE HERE</a>
                   <br></br>
-                  <button className="delete-button" onClick={handleDelete}>{deleted ? "Item Deleted" : "Delete Item"}</button>
+                  {/* <button className="delete-button" onClick={handleDelete}>{deleted ? "Item Deleted" : "Delete Item"}</button> */}
                 </section>
               )}
             </div>
