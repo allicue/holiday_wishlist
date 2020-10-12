@@ -53,7 +53,6 @@ function EditList(props) {
         },
       });
       setListItems(response.data.records);
-      console.log(response.data.records)
     };
     getListItems();
   }, [setFetchItems]);
@@ -64,15 +63,14 @@ function EditList(props) {
   const handleDelete = async () => {
     setDeleted(true);
     setTimeout(async () => {
-      // let's get the airtableURL...
       const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist/${listItems.id}`
-      // ...and make an axios delete request for a particular record
       await axios.delete(airtableURL, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
       props.setFetchReviews(!props.fetchReviews);
+      console.log(props.setFetchItems)
       setDeleted(false);
     }, 1000);
   };

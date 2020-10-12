@@ -1,3 +1,4 @@
+
 header {
   width: 100%;
   height: 150px;
@@ -12,7 +13,8 @@ body{
 .web-title {
   margin: 0;
   padding: 50px 40px 0 40px;
-  font-size: 80px;
+  font-size: 55px;
+
 }
 
 .navbar {
@@ -42,6 +44,7 @@ a {
   justify-content: center;
   text-align: center;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 .countdownsubtitle {
   font-size: 50px;
@@ -86,11 +89,11 @@ span {
 
 .footer{
   background-color: rgb(192, 207, 202);
-  position: absolute;
-  top: 1500px;
+  /* top: 1500px; */
   left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
+  width: 100%;
   height: 100px;
 }
 
