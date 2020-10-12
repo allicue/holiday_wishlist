@@ -27,14 +27,14 @@ function ViewList(props) {
     <div>
       <Switch>
       <Route path="/viewlist">
-          <h2>WISHLIST</h2>
-          <h3>Click on the item you purchased to mark</h3>
+          <h2 className="subheaderviewwishlist">WISHLIST</h2>
+          <h3 className="captionviewwishlist">Click on the item you purchased to mark</h3>
 
           {listItems && 
           <div className="wishlistcontainer">
               {listItems.map((item) => 
                 <section className="wishlistitem">
-                  <p className="itemtitle">Item: {props.listItems.title}</p>
+                  <p className="itemtitle">Item: {item.fields.title}</p>
                   <p>Price: ${item.fields.price}</p>
                   <p>Comments: {item.fields.notes}</p>
                   <a href={item.fields.itemurl}
