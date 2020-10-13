@@ -63,8 +63,8 @@ function Homepage(props) {
       <div>
         <EditList
           listItems={listItems}
-          fetchItem={fetchItems}
-          setFetchItem={setFetchItems}
+          fetchItems={fetchItems}
+          setFetchItems={setFetchItems}
         />
       </div>
 

@@ -40,7 +40,6 @@ function EditList(props) {
   setPrice("");
   setUrl("");
   };
-  
 
   return (
     <div>
@@ -89,8 +88,8 @@ function EditList(props) {
               {props.listItems.map((item) => 
                 <Item
                   item={item}
-                  fetchListItems={props.fetchItems}
-                  setFetchListItems={props.setFetchItems}
+                  fetchItems={props.fetchItems}
+                  setFetchItems={props.setFetchItems}
                 />
               )}
             </div>

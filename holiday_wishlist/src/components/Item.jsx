@@ -2,7 +2,15 @@ import React, { useState } from 'react';
 import axios from "axios";
 
 function Item(props) {
+  
   const [deleted, setDeleted] = useState(false);
+    //CODE TO STRIKETHROUGH IF ALREADY PURCHASED
+    const [purchased, setPurchased] = useState(false)
+
+    const handleClicked = async (e) => {
+      setPurchased(true)
+    }
+  
 
   const handleDelete = async (id) => {
     setDeleted(true);
@@ -13,7 +21,7 @@ function Item(props) {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      props.setFetchListItems(!props.fetchListItems);
+      props.setFetchItems(!props.fetchItems);
       setDeleted(false);
     }, 1000);
   };
