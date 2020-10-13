@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import NavBar from './NavBar';
-import './Homepage.css';
-import ViewList from './ViewList';
-import { Route } from 'react-router-dom';
-import Footer from "./Footer"
-import EditList from './EditList';
 import CountdownHanukkah from './CountdownHanukkah';
 import CountdownChristmas from './CountdownChristmas';
+import EditList from './EditList';
+import Footer from "./Footer";
+import './Homepage.css';
+import NavBar from './NavBar';
+import { Route } from 'react-router-dom';
+import ViewList from './ViewList';
+
 
 function Homepage(props) {
   const [listItems, setListItems] = useState("")

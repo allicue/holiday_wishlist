@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Route, Switch } from 'react-router-dom';
 import './EditList.css';
+import Item from './Item';
 import axios from "axios";
 
 function EditList(props) {
   const [title, setTitle] = useState("");
   const [notes, setNotes] = useState("");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState("");
   const [url, setUrl] = useState("");
 
 
@@ -40,22 +41,6 @@ function EditList(props) {
   setUrl("");
   };
   
-  // DELETE REQUEST
-  const [deleted, setDeleted] = useState(false);
-
-  const handleDelete = async () => {
-    setDeleted(true);
-    setTimeout(async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist/${props.item.id}`
-      await axios.delete(airtableURL, {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-        },
-      });
-      props.setFetchItems(!props.fetchItems);
-      setDeleted(false);
-    }, 1000);
-  };
 
   return (
     <div>
@@ -102,16 +87,11 @@ function EditList(props) {
           {props.listItems && 
           <div className="wishlistcontainer">
               {props.listItems.map((item) => 
-                <section className="wishlistitem">
-                  <p className="itemtitle">Item: {item.fields.title}</p>
-                  <p>Price: ${item.fields.price}</p>
-                  <p>Comments: {item.fields.notes}</p>
-                  <a href={item.fields.itemurl}
-                    target="_blank"
-                    className="purchasebutton">PURCHASE HERE</a>
-                  <br></br>
-                  <button className="delete-button" onClick={handleDelete}>{deleted ? "Item Deleted" : "Delete Item"}</button>
-                </section>
+                <Item
+                  item={item}
+                  fetchListItems={props.fetchItems}
+                  setFetchListItems={props.setFetchItems}
+                />
               )}
             </div>
           }

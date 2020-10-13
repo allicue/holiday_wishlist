@@ -6,10 +6,10 @@ function Footer() {
   return (
     <div className="footer">
       <div className="socialmediacontainer">
-      <a href="https://www.linkedin.com/in/allisonquiroz/" target="_blank">
+      <a href="https://www.linkedin.com/in/allisonquiroz/" rel="noopener noreferrer" target="_blank">
         <img id="linkedin" src={linkedin} alt="linkedin-icon"/>
       </a>
-      <a href="https://github.com/allicue/" target="_blank"> 
+      <a href="https://github.com/allicue/" rel="noopener noreferrer" target="_blank"> 
         <img id="github" src={github} alt="github-icon"/>
       </a>
       </div>

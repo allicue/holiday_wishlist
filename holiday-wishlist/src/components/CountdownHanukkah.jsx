@@ -30,7 +30,7 @@ function CountdownHanukkah() {
     setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-  }, [timeLeft]);
+  });
 
   //setting an empty array so we can push the time left to it
   const timerComponents = [];

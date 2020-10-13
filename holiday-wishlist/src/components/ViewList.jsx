@@ -9,17 +9,19 @@ function ViewList(props) {
       <Switch>
       <Route path="/viewlist">
           <h2 className="subheaderviewwishlist">WISHLIST</h2>
-          <h3 className="captionviewwishlist">Click on the item you purchased to mark</h3>
+          <h3 className="captionviewwishlist">If you purchased an item below,
+          click on the item name to cross it off.</h3>
 
           {props.listItems && 
           <div className="wishlistcontainer">
               {props.listItems.map((item) => 
-                <section key={item.id} className="wishlistitem">
+                <section className="wishlistitem">
                   <p className="itemtitle">Item: {item.fields.title}</p>
                   <p>Price: ${item.fields.price}</p>
                   <p>Comments: {item.fields.notes}</p>
                   <a href={item.fields.itemurl}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="purchasebutton">PURCHASE HERE</a>
                 </section>
               )}
