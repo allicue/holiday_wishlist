@@ -1,0 +1,28 @@
+.subheadereditlist {
+  margin-left: 40px;
+  color: rgb(50, 59, 56);
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+  background-color:  rgb(192, 207, 202);
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 20px;
+}
+.add-item-button {
+  width: 200px;
+}
+
+.delete-button {
+  margin-top: 20px;
+}
