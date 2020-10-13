@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Route, Switch } from 'react-router-dom';
-import axios from "axios";
 import './ViewList.css';
-import EditList from './EditList';
 
 function ViewList(props) {
 
@@ -16,7 +14,7 @@ function ViewList(props) {
           {props.listItems && 
           <div className="wishlistcontainer">
               {props.listItems.map((item) => 
-                <section className="wishlistitem">
+                <section key={item.id} className="wishlistitem">
                   <p className="itemtitle">Item: {item.fields.title}</p>
                   <p>Price: ${item.fields.price}</p>
                   <p>Comments: {item.fields.notes}</p>

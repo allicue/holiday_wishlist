@@ -1,4 +1,3 @@
-
 header {
   width: 100%;
   height: 150px;
@@ -89,7 +88,6 @@ span {
 
 .footer{
   background-color: rgb(192, 207, 202);
-  /* top: 1500px; */
   left: 0;
   bottom: 0;
   right: 0;

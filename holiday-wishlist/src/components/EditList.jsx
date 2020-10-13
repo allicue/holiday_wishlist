@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Route, Switch } from 'react-router-dom';
 import './EditList.css';
 import axios from "axios";
@@ -40,22 +40,22 @@ function EditList(props) {
   setUrl("");
   };
   
-  //DELETE REQUEST
-  // const [deleted, setDeleted] = useState(false);
+  // DELETE REQUEST
+  const [deleted, setDeleted] = useState(false);
 
-  // const handleDelete = async () => {
-  //   setDeleted(true);
-  //   setTimeout(async () => {
-  //     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist/${listItems.id}`
-  //     await axios.delete(airtableURL, {
-  //       headers: {
-  //         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-  //       },
-  //     });
-  //     props.setFetchItems(!props.fetchItems);
-  //     setDeleted(false);
-  //   }, 1000);
-  // };
+  const handleDelete = async () => {
+    setDeleted(true);
+    setTimeout(async () => {
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist/${props.item.id}`
+      await axios.delete(airtableURL, {
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        },
+      });
+      props.setFetchItems(!props.fetchItems);
+      setDeleted(false);
+    }, 1000);
+  };
 
   return (
     <div>
@@ -110,7 +110,7 @@ function EditList(props) {
                     target="_blank"
                     className="purchasebutton">PURCHASE HERE</a>
                   <br></br>
-                  {/* <button className="delete-button" onClick={handleDelete}>{deleted ? "Item Deleted" : "Delete Item"}</button> */}
+                  <button className="delete-button" onClick={handleDelete}>{deleted ? "Item Deleted" : "Delete Item"}</button>
                 </section>
               )}
             </div>

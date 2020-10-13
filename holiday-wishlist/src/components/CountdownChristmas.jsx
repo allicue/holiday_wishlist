@@ -21,13 +21,12 @@ function CountdownChristmas() {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [year] = useState(new Date().getFullYear());
 
   useEffect(() => {
     setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-  });
+  }, [timeLeft]) ;
 
   const timerComponents = [];
 
