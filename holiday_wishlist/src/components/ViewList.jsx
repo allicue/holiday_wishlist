@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import Item from './Item';
 import { Route, Switch } from 'react-router-dom';
 import './ViewList.css';
 
 function ViewList(props) {
 
+      //CODE TO STRIKETHROUGH IF ALREADY PURCHASED
+      const [purchased, setPurchased] = useState(false)
 
-    
+      const handleClicked = async (e) => {
+        setPurchased(true)
+      }
+      // onClick={(e) => handleClicked(item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }} 
+
   return (
     <div>
       <Switch>
@@ -18,7 +25,7 @@ function ViewList(props) {
           <div className="wishlistcontainer">
               {props.listItems.map((item) => 
                 <section className="wishlistitem">
-                  <p className="itemtitle" onClick={(e) => handleClicked(item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }} >Item: {item.fields.title}</p>
+                  <p className="itemtitle" onClick={(e) => handleClicked(item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }}>Item: {item.fields.title}</p>
                   <p>Price: ${item.fields.price}</p>
                   <p>Comments: {item.fields.notes}</p>
                   <a href={item.fields.itemurl}

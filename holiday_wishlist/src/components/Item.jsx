@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import axios from "axios";
+import './Item.css';
+import TrashCan from './web-photos/trash-can.png';
 
 function Item(props) {
   
   const [deleted, setDeleted] = useState(false);
-    //CODE TO STRIKETHROUGH IF ALREADY PURCHASED
-    const [purchased, setPurchased] = useState(false)
-
-    const handleClicked = async (e) => {
-      setPurchased(true)
-    }
   
+      // //CODE TO STRIKETHROUGH IF ALREADY PURCHASED
+      // const [purchased, setPurchased] = useState(false)
+
+      // const handleClicked = async (e) => {
+      //   setPurchased(true)
+      // }
 
   const handleDelete = async (id) => {
     setDeleted(true);
@@ -23,7 +25,7 @@ function Item(props) {
       });
       props.setFetchItems(!props.fetchItems);
       setDeleted(false);
-    }, 1000);
+    }, 500);
   };
 
   return (
@@ -37,7 +39,7 @@ function Item(props) {
           rel="noopener noreferrer"
           className="purchasebutton">PURCHASE HERE</a>
         <br></br>
-        <button className="delete-button" disabled={deleted} onClick={(e)=> handleDelete(props.item.id)}>{deleted ? "Item Deleted" : "Delete Item"}</button>
+        <a disabled={deleted} onClick={(e)=> handleDelete(props.item.id)}><img src={TrashCan} alt="trash-icon" className="delete-button"/></a>
       </section>
     </div>
   );

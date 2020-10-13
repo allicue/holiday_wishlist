@@ -17,16 +17,22 @@ margin-left: 40px;
 }
 
 .wishlistitem{
-  font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.842);
+  font-size: 20px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)
+  ),url(./web-photos/ViewList.jpeg);
+  background-size: cover;
   color: white;
   width: 400px;
+  height: 250px;
   margin: 20px;
   padding: 10px 10px 20px 30px;
 }
 
 .itemtitle {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .purchasebutton {

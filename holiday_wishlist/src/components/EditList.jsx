@@ -33,7 +33,7 @@ function EditList(props) {
       },
     }
   );
-  props.setFetchItem(!props.fetchItem);
+  props.setFetchItems(!props.fetchItems);
 
   setTitle("");
   setNotes("");
@@ -45,6 +45,20 @@ function EditList(props) {
     <div>
       <Switch>
         <Route path="/editlist">
+
+        <h2 className="subheadereditlist">MANAGE LIST</h2>
+          {props.listItems && 
+          <div className="wishlistcontainer">
+              {props.listItems.map((item) => 
+                <Item
+                  item={item}
+                  fetchItems={props.fetchItems}
+                  setFetchItems={props.setFetchItems}
+                />
+              )}
+            </div>
+          }
+          
           <h2 className="subheadereditlist">ADD ITEM TO LIST</h2>
           <form className="add-item-form" onSubmit={handleSubmit} >
             <label htmlFor="title">Item:</label>
@@ -82,18 +96,7 @@ function EditList(props) {
             <button className="add-item-button" type="submit">Submit Additional Item</button>
           </form>
 
-          <h2 className="subheadereditlist">MANAGE LIST</h2>
-          {props.listItems && 
-          <div className="wishlistcontainer">
-              {props.listItems.map((item) => 
-                <Item
-                  item={item}
-                  fetchItems={props.fetchItems}
-                  setFetchItems={props.setFetchItems}
-                />
-              )}
-            </div>
-          }
+
         </Route>
       </Switch>
     </div>
