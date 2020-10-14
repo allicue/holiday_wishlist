@@ -5,6 +5,7 @@ header {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.0)), 
     url(./web-photos/forest-in-winters-4.jpg);
+  background-size: cover;
   color: white;
 }
 
@@ -128,5 +129,100 @@ span {
 
 #linkedin {
   width: 50px;
+}
 
+/* TABLET BREAKPOINT */
+@media only screen and (max-width: 1024px) {
+
+
+  .navbar {
+    font-size: 20px;
+  }
+
+  .countdowncontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .christmascontainer {
+    width: 350px;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-right: 40px;
+  }
+  
+  .hanukkahcontainer{
+    width: 350px;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-left: 40px;
+
+  }
+}
+
+/* MOBILE BREAKPOINT */
+@media only screen and (max-width: 600px) {
+
+  header {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    color: white;
+  }
+  
+  body{
+    background-color: whitesmoke;
+  }
+  
+  .web-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .navbar {
+    justify-content: center;
+    font-weight: 900;
+    font-family: 'Josefin Sans', sans-serif;
+  
+  }
+
+  .navbarlinka {
+    margin-right: 0px;
+  }
+  
+  .countdowncontainer { 
+    flex-direction: column;
+  }
+  
+  .christmascontainer {
+    width: 350px;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .hanukkahcontainer{
+    width: 350px;
+    font-size: 35px;
+    margin: 0 auto;
+  }
+
+  .socialmediacontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 0px;
+  }
+  
+  #github{
+    width: 80px;
+    padding-left: 20px;
+  }
+  
 }

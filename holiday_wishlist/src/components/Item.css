@@ -8,3 +8,11 @@
 cursor: pointer;
 background-color: grey;
 }
+
+@media only screen and (max-width: 600px) {
+  
+  .delete-button {
+    margin-left: 250px;
+  }
+
+}
