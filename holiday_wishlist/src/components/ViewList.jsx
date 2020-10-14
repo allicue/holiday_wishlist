@@ -1,5 +1,6 @@
 import React from "react";
-import BuyButton from './web-photos/buy.png';
+
+import Item from './Item'
 import { Route, Switch } from 'react-router-dom';
 import './ViewList.css';
 
@@ -19,28 +20,24 @@ function ViewList(props) {
     <div>
       <Switch>
       <Route path="/viewlist">
-          <h2 className="subheaderviewwishlist">WISHLIST</h2>
-          <h3 className="captionviewwishlist">If you purchased an item below,
-          click on the item name to cross it off.</h3>
+        <h2 className="subheaderviewwishlist">WISHLIST</h2>
+        <h3 className="captionviewwishlist">If you purchased an item below,
+        click on the item name to cross it off.</h3>
 
-          {props.listItems && 
+        {props.listItems && 
           <div className="wishlistcontainer">
-              {props.listItems.map((item) => 
-                <section className="wishlistitem">
-                  <p className="itemtitle" >Item: {item.fields.title}</p>
-                  <p>Price: ${item.fields.price}</p>
-                  <p>Comments: {item.fields.notes}</p>
-                  <a href={item.fields.itemurl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="purchasebutton"><img src={BuyButton} alt="buy-icon"/></a>
-                </section>
+            {props.listItems.map((item) => 
+              <Item
+                item={item}
+                fetchItems={props.fetchItems}
+                setFetchItems={props.setFetchItems}
+              />
             )}
-            </div>
-          }
+          </div>
+        }
           
-        </Route>
-        </Switch>
+      </Route>
+      </Switch>
     </div>
   );
 }

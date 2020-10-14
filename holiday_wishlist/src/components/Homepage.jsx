@@ -39,6 +39,7 @@ function Homepage(props) {
       <div className="navbar">
         <NavBar />
       </div>
+      
       <Route exact path="/">
       <div>
         <h2 className="countdownsubtitle">COUNTDOWN UNTIL</h2>
@@ -52,6 +53,7 @@ function Homepage(props) {
           </div>
       </div>
       </Route>
+
       <div>
         <ViewList
           listItems={listItems}

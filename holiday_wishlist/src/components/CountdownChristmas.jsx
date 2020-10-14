@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-//code below referrenced from https://github.com/do-community/react-hooks-timer/blob/master/src/App.js
+//code below referrenced from https://www.digitalocean.com/community/tutorials/react-countdown-timer-react-hooks
 
 function CountdownChristmas() {
   const calculateTimeLeft = () => {

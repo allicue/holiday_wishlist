@@ -14,7 +14,6 @@ function EditList(props) {
   //ADD ITEM TO DATABASE
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // fields object holds the item name and other info
     const fields = {
       title,
       notes,
@@ -54,6 +53,7 @@ function EditList(props) {
                   item={item}
                   fetchItems={props.fetchItems}
                   setFetchItems={props.setFetchItems}
+                  canDelete
                 />
               )}
             </div>
@@ -95,7 +95,6 @@ function EditList(props) {
             />
             <button className="add-item-button" type="submit">Submit Additional Item</button>
           </form>
-
 
         </Route>
       </Switch>

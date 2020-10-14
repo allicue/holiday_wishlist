@@ -16,7 +16,7 @@ function Item(props) {
       }
 
 
-  const handleDelete = async (id) => {
+  const handleDelete = async () => {
     setDeleted(true);
     setTimeout(async () => {
       const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/holiday-wishlist/${props.item.id}`
@@ -33,14 +33,15 @@ function Item(props) {
   return (
     <div>
       <section className="wishlistitem">
-        <p className="itemtitle" onClick={(id) => handleClicked(props.item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }}>Item: {props.item.fields.title}</p>
+        <p className="itemtitle" onClick={() => handleClicked(props.item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }}>Item: {props.item.fields.title}</p>
         <p>Price: ${props.item.fields.price}</p>
         <p>Comments: {props.item.fields.notes}</p>
         <a href={props.item.fields.itemurl}
           target="_blank"
           rel="noopener noreferrer"
           className="purchasebutton"><img src={BuyButton} alt="buy-icon"/></a>
-        <a href onClick={(e)=> handleDelete(props.item.id)} disabled={deleted} ><img src={TrashCan} alt="trash-icon" className="delete-button"/></a>
+        {props.canDelete && <img src={TrashCan} alt="trash-icon" className="delete-button" onClick={(e) => !deleted && handleDelete(props.item.id)} />}
+        {/* after && if deleted show spinner(ternary) */}
       </section>
     </div>
   );
