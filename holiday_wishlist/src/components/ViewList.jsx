@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-import Item from './Item';
+import BuyButton from './web-photos/buy.png';
 import { Route, Switch } from 'react-router-dom';
 import './ViewList.css';
 
 function ViewList(props) {
 
       //CODE TO STRIKETHROUGH IF ALREADY PURCHASED
-      const [purchased, setPurchased] = useState(false)
+      // const [purchased, setPurchased] = useState(false)
 
-      const handleClicked = async (e) => {
-        setPurchased(true)
-      }
-      // onClick={(e) => handleClicked(item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }} 
+      // const handleClicked = async (id) => {
+      //   setPurchased(true)
+      // }
+  //onClick={(id) => handleClicked(item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }}
+
+
 
   return (
     <div>
@@ -25,15 +27,15 @@ function ViewList(props) {
           <div className="wishlistcontainer">
               {props.listItems.map((item) => 
                 <section className="wishlistitem">
-                  <p className="itemtitle" onClick={(e) => handleClicked(item.id)} style={{ textDecoration: purchased ? "line-through" : "none" }}>Item: {item.fields.title}</p>
+                  <p className="itemtitle" >Item: {item.fields.title}</p>
                   <p>Price: ${item.fields.price}</p>
                   <p>Comments: {item.fields.notes}</p>
                   <a href={item.fields.itemurl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="purchasebutton">PURCHASE HERE</a>
+                    className="purchasebutton"><img src={BuyButton} alt="buy-icon"/></a>
                 </section>
-              )}
+            )}
             </div>
           }
         </Route>

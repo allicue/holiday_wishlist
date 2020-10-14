@@ -30,6 +30,11 @@ a {
   color: white;
 }
 
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  }
+
 .navbarlinka {
   margin-right: 50px;
 }
@@ -43,7 +48,7 @@ a {
   justify-content: center;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .countdownsubtitle {
   font-size: 50px;
