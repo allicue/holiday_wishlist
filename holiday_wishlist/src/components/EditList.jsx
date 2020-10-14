@@ -61,7 +61,7 @@ function EditList(props) {
           
           <h2 className="subheadereditlist">ADD ITEM TO LIST</h2>
           <form className="add-item-form" onSubmit={handleSubmit} >
-            <label htmlFor="title">Item:</label>
+            <label htmlFor="title">ITEM:</label>
             <input
               name="title"
               type="text"
@@ -69,7 +69,7 @@ function EditList(props) {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
-            <label htmlFor="notes">Notes:</label>
+            <label htmlFor="notes">NOTES:</label>
             <input
               name="notes"
               type="text"
@@ -77,7 +77,7 @@ function EditList(props) {
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
             />
-            <label htmlFor="price">Price:</label>
+            <label htmlFor="price">PRICE:</label>
             <input
               name="price"
               type="number"
@@ -93,9 +93,8 @@ function EditList(props) {
               value={url}
               onChange={(e) => setUrl(e.target.value)}
             />
-            <button className="add-item-button" type="submit">Submit Additional Item</button>
+            <button className="add-item-button" type="submit">ADD ITEM</button>
           </form>
-
         </Route>
       </Switch>
     </div>

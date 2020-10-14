@@ -49,7 +49,7 @@ function CountdownHanukkah() {
   });
   return (
     <div>
-      <h1>HANUKKAH</h1>
+      <h1 className="holiday-title">HANUKKAH</h1>
       {/* if the timerComponent's array has something left keep displaying time left, if not, display <h2>  */}
       {timerComponents.length ? timerComponents : <h2>Happy Hanukkah!</h2>}
     </div>

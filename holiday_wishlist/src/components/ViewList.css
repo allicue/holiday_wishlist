@@ -1,12 +1,14 @@
 .subheaderviewwishlist {
-color: rgb(50, 59, 56);
-margin-left: 40px;
-
+  color: rgb(50, 59, 56);
+  font-size: 27px;
+  margin: 45px 0px 15px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .captionviewwishlist{
-  margin-left: 40px;
-
+  margin: 0px 0px 30px 40px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .wishlistcontainer{
@@ -15,6 +17,8 @@ margin-left: 40px;
   justify-content: center;
   text-align: left;
   margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 .wishlistitem{
@@ -26,12 +30,15 @@ margin-left: 40px;
   background-size: cover;
   color: white;
   width: 400px;
-  height: 275px;
+  height: 288px;
   margin: 20px;
   padding: 10px 10px 20px 30px;
+  border: 5px solid rgb(50, 59, 56);
 }
 
 .itemtitle {
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
+  margin-top: 30px;
 }

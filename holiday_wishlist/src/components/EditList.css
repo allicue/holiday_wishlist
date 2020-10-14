@@ -1,6 +1,9 @@
 .subheadereditlist {
-  margin-left: 40px;
   color: rgb(50, 59, 56);
+  font-size: 27px;
+  margin: 45px 0px 15px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .add-item-form {
@@ -8,18 +11,35 @@
   flex-direction: column;
   margin: 40px 0px 40px 40px;
   width: 500px;
-  background-color:  rgb(192, 207, 202);
-  padding: 20px;
+  background-color: rgb(50, 59, 56);
+  padding: 20px 40px 20px 40px;
+  border: 3px ridge rgb(50, 59, 56);
 }
 
 label {
   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding-bottom: 5px;
 }
 
 input {
   margin-bottom: 20px;
 }
 .add-item-button {
-  width: 200px;
+  width: 75px;
+  height: 75px;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: white;
+  color: rgb(50, 59, 56);
+  border-radius: 10%;
+  border-style: none;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 15px;
 }
 
+.add-item-button:hover {
+  cursor: pointer;
+}

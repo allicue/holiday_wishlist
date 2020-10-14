@@ -43,7 +43,7 @@ function CountdownChristmas() {
   });
   return (
     <div>
-      <h1>CHRISTMAS</h1>
+      <h1 className="holiday-title">CHRISTMAS</h1>
       {timerComponents.length ? timerComponents : <h2>Merry Christmas!</h2>}
     </div>
   );

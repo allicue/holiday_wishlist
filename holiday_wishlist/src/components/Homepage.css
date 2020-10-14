@@ -1,7 +1,10 @@
 header {
   width: 100%;
   height: 150px;
-  background-image: url(./web-photos/forest-in-winters-4.jpg);
+  background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.0)), 
+    url(./web-photos/forest-in-winters-4.jpg);
   color: white;
 }
 
@@ -11,9 +14,10 @@ body{
 
 .web-title {
   margin: 0;
-  padding: 50px 40px 0 40px;
-  font-size: 55px;
-
+  padding: 70px 40px 0 40px;
+  font-size: 60px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 .navbar {
@@ -22,7 +26,9 @@ body{
   background-color: rgb(192, 207, 202);
   padding: 8px;
   font-size: large;
-  font-weight: bold;
+  font-weight: 900;
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 
 a {
@@ -43,21 +49,26 @@ a:hover{
   margin-right: 20px;
 }
 
+.countdownsubtitle {
+  font-size: 45px;
+  text-align: center;
+  color: rgb(50, 59, 56);
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .countdowncontainer {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 50px;
-}
-.countdownsubtitle {
-  font-size: 50px;
-  text-align: center;
-  color: rgb(50, 59, 56);
+  margin-bottom: 80px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 span {
-  font-size: 40px;
+  font-size: 35x;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* got the background image in the containers to darken using the gradient code here https://css-tricks.com/design-considerations-text-images/ */
@@ -82,13 +93,16 @@ span {
   background-image:  
   linear-gradient(
     rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.5)
-  ), url(./web-photos/treees.jpg);
+    rgba(0, 0, 0, 0.5)), 
+    url(./web-photos/treees.jpg);
   background-size: cover;
   width: 400px;
   padding: 20px 20px 40px 20px;
   font-size: 35px;
+}
 
+.holiday-title {
+  margin-bottom: 20px;
 }
 
 .footer{
