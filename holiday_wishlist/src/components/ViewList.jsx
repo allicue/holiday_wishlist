@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import BuyButton from './web-photos/buy.png';
 import { Route, Switch } from 'react-router-dom';
 import './ViewList.css';
@@ -38,6 +38,7 @@ function ViewList(props) {
             )}
             </div>
           }
+          
         </Route>
         </Switch>
     </div>

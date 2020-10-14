@@ -40,7 +40,7 @@ function Item(props) {
           target="_blank"
           rel="noopener noreferrer"
           className="purchasebutton"><img src={BuyButton} alt="buy-icon"/></a>
-        <a disabled={deleted} onClick={(e)=> handleDelete(props.item.id)}><img src={TrashCan} alt="trash-icon" className="delete-button"/></a>
+        <a href onClick={(e)=> handleDelete(props.item.id)} disabled={deleted} ><img src={TrashCan} alt="trash-icon" className="delete-button"/></a>
       </section>
     </div>
   );
