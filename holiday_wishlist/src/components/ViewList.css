@@ -33,7 +33,7 @@
   height: 288px;
   margin: 20px;
   padding: 10px 10px 20px 30px;
-  border: 5px solid rgb(50, 59, 56);
+  box-shadow: 10px 10px 5px grey;
 }
 
 .itemtitle {
@@ -61,7 +61,7 @@
 
   .wishlistitem{
     width: 350px;
-    height: 288px;
+    height: 90%;
   }
 
 }
