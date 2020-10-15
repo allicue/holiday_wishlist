@@ -134,7 +134,6 @@ span {
 /* TABLET BREAKPOINT */
 @media only screen and (max-width: 1024px) {
 
-
   .navbar {
     font-size: 20px;
   }
@@ -160,8 +159,8 @@ span {
     font-size: 35px;
     margin: 0 auto;
     margin-left: 40px;
-
   }
+
 }
 
 /* MOBILE BREAKPOINT */

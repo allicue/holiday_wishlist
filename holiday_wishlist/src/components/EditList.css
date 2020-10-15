@@ -44,6 +44,18 @@ input {
   cursor: pointer;
 }
 
+
+/* TABLET BREAKPOINT */
+@media only screen and (max-width: 1024px) {
+
+  .add-item-form {
+    margin-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+}
+
 /* MOBILE BREAKPOINT */
 @media only screen and (max-width: 600px) {
   
@@ -51,10 +63,8 @@ input {
     margin-left: 0px;
     text-align: center;
   }
+
   .add-item-form {
-    margin-top: 10px;
-    margin: 0 auto;
-    margin-bottom: 20px;
     width: 350px;
     padding: 20px 20px 20px 20px;
   }

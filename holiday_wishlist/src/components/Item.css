@@ -9,6 +9,7 @@ cursor: pointer;
 background-color: grey;
 }
 
+/* MOBILE BREAKPOINT */
 @media only screen and (max-width: 600px) {
   
   .delete-button {
