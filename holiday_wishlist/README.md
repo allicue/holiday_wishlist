@@ -1,5 +1,7 @@
 # Holiday Wishlist
 
+https://holidaywishlistproject.netlify.app/
+
 ## Project Description
 
 User should be able to create a wishlist for the holiday season. Once created and displayed, the user can send to family and friends who can anonymously cross items off the list if they purchased it. User can add on more items as they wish.
@@ -56,7 +58,7 @@ API Snippet:
                 "item-url": "https://www.everlane.com/products/womens-day-boot-reknit-bone?locale=US&utm_medium=cpc&utm_source=pla-google&utm_campaign=838139507&utm_content=385748...",
                 "price": 205,
                 "title": "White Boots",
-                "notes": "I'm a size 6.5 / 7!"
+                "notes": "I'm a size 6.5 / 7"
             },
             "createdTime": "2020-10-08T21:17:07.000Z"
         },
