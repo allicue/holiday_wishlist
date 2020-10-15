@@ -106,15 +106,15 @@ API Snippet:
 | Create Form/Submit Button for Adding New Items    |    H     |     2 hrs      |     1 hr      |    1 hr     |
 | Create POST Request to Add Items & Render to Page |    H     |     2 hrs      |     3 hrs     |    3 hrs    |
 | Create DELETE Request to Delete Unwanted Items    |    M     |     3 hrs      |     3 hrs     |    3 hrs    |
-| Basic CSS Styling                                 |    L     |     2 hrs      |     1.5 hrs   |    1.5 hrs  |
+| Basic CSS Styling                                 |    L     |     2 hrs      |     2 hrs     |      2 hrs  |
 | Troubleshooting Flexbox                           |    H     |     3 hrs      |     1 hr      |    1 hr     |
 | Create Countdown Component for Homepage           |    H     |     3 hrs      |     4 hrs     |    4 hrs    |
-| Create Footer Component                           |    L     |     1 hrs      |     .5 hrs    |   .5 hrs    |
+| Create Footer Component                           |    L     |     1 hrs      |     1 hr      |   1 hrs     |
 | Advance CSS Styling                               |    M     |     6 hrs      |     6 hrs     |    6 hrs    |
 | Add Mobile & Table Breakpoints                    |    H     |     2 hrs      |     1.5 hrs   |   1.5 hrs   |
-| Work on Post-MVP                                  |    H     |     4 hrs      |     0 hrs     |    0 hrs    |
+| Work on Post-MVP                                  |    H     |     4 hrs      |     2 hrs     |    2 hrs    |
 | Lint Code / Organize File Structure               |    L     |      1 hr      |     .5 hrs    |     .5 hrs  |
-| Total                                             |    NA    |    35.5 hrs    |    29 hrs     |    29 hrs   |
+| Total                                             |    NA    |    35.5 hrs    |    32 hrs     |    32 hrs   |
 
 ## SWOT Analysis
 

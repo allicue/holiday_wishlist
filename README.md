@@ -1,5 +1,7 @@
 # Holiday Wishlist
 
+https://holidaywishlistproject.netlify.app/
+
 ## Project Description
 
 User should be able to create a wishlist for the holiday season. Once created and displayed, the user can send to family and friends who can anonymously cross items off the list if they purchased it. User can add on more items as they wish.
@@ -56,7 +58,7 @@ API Snippet:
                 "item-url": "https://www.everlane.com/products/womens-day-boot-reknit-bone?locale=US&utm_medium=cpc&utm_source=pla-google&utm_campaign=838139507&utm_content=385748...",
                 "price": 205,
                 "title": "White Boots",
-                "notes": "I'm a size 6.5 / 7!"
+                "notes": "I'm a size 6.5 / 7"
             },
             "createdTime": "2020-10-08T21:17:07.000Z"
         },
@@ -84,12 +86,12 @@ API Snippet:
 
 | Day    | Deliverable                                        | Status     |
 | ------ | -------------------------------------------------- | ---------- |
-| Oct 8  | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| Oct 9  | Project Approval                                   | Incomplete |
-| Oct 10 | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| Oct 13 | Actual code                                        | Incomplete |
-| Oct 14 | Initial Clickable Model                            | Incomplete |
-| Oct 14 | MVP                                                | Incomplete |
+| Oct 8  | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| Oct 9  | Project Approval                                   | Complete   |
+| Oct 10 | Core Application Structure (HTML, CSS, etc.)       | Complete   |
+| Oct 13 | Actual code                                        | Complete   |
+| Oct 14 | Initial Clickable Model                            | Complete   |
+| Oct 14 | MVP                                                | Complete   |
 | Oct 15 | Post-MVP                                           | Incomplete |
 | Oct 16 | Presentations                                      | Incomplete |
 
@@ -97,22 +99,22 @@ API Snippet:
 
 | Component                                         | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Database/Inputing Base Info              |    H     |     .5 hrs     |    .5 hrs     |    0 hrs    |
-| Build Out Foundation HTML/JS                      |    L     |      1 hr      |     0hrs      |    0 hrs    |
-| Build Out Routes for Navbar                       |    H     |     3 hrs      |     0hrs      |    0 hrs    |
-| Create GET Request & Render to Page               |    H     |     2 hrs      |     0hrs      |    0 hrs    |
-| Create Form/Submit Button for Adding New Items    |    H     |     2 hrs      |     0hrs      |    0 hrs    |
-| Create POST Request to Add Items & Render to Page |    H     |     2 hrs      |     0hrs      |    0 hrs    |
-| Create DELETE Request to Delete Unwanted Items    |    M     |     3 hrs      |     0hrs      |    0 hrs    |
-| Basic CSS Styling                                 |    L     |     2 hrs      |     0hrs      |    0 hrs    |
-| Troubleshooting Flexbox                           |    H     |     3 hrs      |     0hrs      |    0 hrs    |
-| Create Countdown Component for Homepage           |    H     |     3 hrs      |     0hrs      |    0 hrs    |
-| Create Footer Component                           |    L     |     1 hrs      |     0hrs      |    0 hrs    |
-| Advance CSS Styling                               |    M     |     6 hrs      |     0hrs      |    0 hrs    |
-| Add Mobile & Table Breakpoints                    |    H     |     2 hrs      |     0hrs      |    0 hrs    |
-| Work on Post-MVP                                  |    H     |     4 hrs      |     0hrs      |    0 hrs    |
-| Lint Code / Organize File Structure               |    L     |      1 hr      |     0hrs      |    0 hrs    |
-| Total                                             |    NA    |    35.5 hrs    |    .5 hrs     |    0hrs     |
+| Creating Database/Inputing Base Info              |    H     |     .5 hrs     |    .5 hrs     |    .5 hrs   |
+| Build Out Foundation HTML/JS                      |    L     |      1 hr      |     .5 hrs    |    .5 hrs   |
+| Build Out Routes for Navbar                       |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Create GET Request & Render to Page               |    H     |     2 hrs      |     3 hrs     |    3 hrs    |
+| Create Form/Submit Button for Adding New Items    |    H     |     2 hrs      |     1 hr      |    1 hr     |
+| Create POST Request to Add Items & Render to Page |    H     |     2 hrs      |     3 hrs     |    3 hrs    |
+| Create DELETE Request to Delete Unwanted Items    |    M     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Basic CSS Styling                                 |    L     |     2 hrs      |     2 hrs     |      2 hrs  |
+| Troubleshooting Flexbox                           |    H     |     3 hrs      |     1 hr      |    1 hr     |
+| Create Countdown Component for Homepage           |    H     |     3 hrs      |     4 hrs     |    4 hrs    |
+| Create Footer Component                           |    L     |     1 hrs      |     1 hr      |   1 hrs     |
+| Advance CSS Styling                               |    M     |     6 hrs      |     6 hrs     |    6 hrs    |
+| Add Mobile & Table Breakpoints                    |    H     |     2 hrs      |     1.5 hrs   |   1.5 hrs   |
+| Work on Post-MVP                                  |    H     |     4 hrs      |     2 hrs     |    2 hrs    |
+| Lint Code / Organize File Structure               |    L     |      1 hr      |     .5 hrs    |     .5 hrs  |
+| Total                                             |    NA    |    35.5 hrs    |    32 hrs     |    32 hrs   |
 
 ## SWOT Analysis
 
