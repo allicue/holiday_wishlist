@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Homepage.css';
 
 function NavBar() {
+  let activeStyle = {
+  borderBottom: "2px solid white",
+  }
+  
   return (
     <div className="navbar">
-      <Link className="navbarlinka" to="/editlist">EDIT LIST</Link>
-      <Link className="navbarlinkb" to="/viewlist">VIEW LIST</Link>
-      <Link className="navbarlinkb" to="/">HOME</Link>
+      <NavLink activeStyle={activeStyle} className="navbarlinka" to="/editlist">EDIT LIST</NavLink>
+      <NavLink activeStyle={activeStyle} className="navbarlinkb" to="/viewlist">VIEW LIST</NavLink>
+      <NavLink activeStyle={activeStyle} className="navbarlinkb" exact to="/">HOME</NavLink>
     </div>
   );
 }

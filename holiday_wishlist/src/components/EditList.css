@@ -7,9 +7,10 @@
 }
 
 .add-item-form {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  margin: 40px 0px 40px 40px;
+  margin: 0 auto;
   width: 500px;
   background-color: rgb(50, 59, 56);
   padding: 20px 40px 20px 40px;
@@ -26,15 +27,18 @@ label {
 input {
   margin-bottom: 20px;
 }
+
+form.add-item-button{
+  margin-top: 30px;
+}
 .add-item-button {
-  width: 75px;
-  height: 75px;
-  line-height: 28px;
+  width: fit-content;
+  height: fit-content;
   font-size: 20px;
   font-weight: 700;
   background-color: white;
   color: rgb(50, 59, 56);
-  border-radius: 10%;
+  border-radius: 7%;
   border-style: none;
   font-family: 'Open Sans', sans-serif;
   margin-top: 15px;
@@ -50,8 +54,6 @@ input {
 
   .add-item-form {
     margin-top: 10px;
-    margin: 0 auto;
-    margin-bottom: 20px;
   }
 
 }
@@ -65,8 +67,12 @@ input {
   }
 
   .add-item-form {
-    width: 350px;
+    width: 340px;
     padding: 20px 20px 20px 20px;
+  }
+
+  input {
+    padding: 10px 0px 10px 5px;
   }
 
 }
