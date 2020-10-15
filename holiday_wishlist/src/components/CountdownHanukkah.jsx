@@ -19,7 +19,6 @@ function CountdownHanukkah() {
         Seconds: Math.floor((difference / 1000) % 60),
       };
     }
-
     return timeLeft;
   };
 

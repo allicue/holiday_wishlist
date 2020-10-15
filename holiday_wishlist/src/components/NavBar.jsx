@@ -4,7 +4,7 @@ import './Homepage.css';
 
 function NavBar() {
   let activeStyle = {
-  borderBottom: "2px solid white",
+    borderBottom: "2px solid white",
   }
   
   return (

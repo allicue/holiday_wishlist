@@ -5,17 +5,13 @@ import './Item.css';
 import TrashCan from './web-photos/trash-can.png';
 
 function Item(props) {
-  
+  //CODE TO STRIKETHROUGH IF ALREADY PURCHASED
+  const [purchased, setPurchased] = useState(false)
+  const handleClicked = async (id) => {
+    setPurchased(true)
+  }
+
   const [deleted, setDeleted] = useState(false);
-  
-      // //CODE TO STRIKETHROUGH IF ALREADY PURCHASED
-      const [purchased, setPurchased] = useState(false)
-
-      const handleClicked = async (id) => {
-        setPurchased(true)
-      }
-
-
   const handleDelete = async () => {
     setDeleted(true);
     setTimeout(async () => {
@@ -41,7 +37,6 @@ function Item(props) {
           rel="noopener noreferrer"
           className="purchasebutton"><img src={BuyButton} alt="buy-icon"/></a>
         {props.canDelete && <img src={TrashCan} alt="trash-icon" className="delete-button" onClick={(e) => !deleted && handleDelete(props.item.id)} />}
-        {/* after && if deleted show spinner(ternary) */}
       </section>
     </div>
   );

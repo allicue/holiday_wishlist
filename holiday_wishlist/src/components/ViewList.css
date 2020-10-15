@@ -25,8 +25,8 @@
   font-size: 20px;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.4)
-  ),url(./web-photos/ViewList.jpeg);
+    rgba(0, 0, 0, 0.4)),
+    url(./web-photos/ViewList.jpeg);
   background-size: cover;
   color: white;
   width: 400px;
