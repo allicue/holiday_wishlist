@@ -155,12 +155,19 @@ span {
     font-size: 20px;
   }
 
+  .homepagesubtitle {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 60px;
+  }
+
   .countdowncontainer {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 80px;
     font-family: 'Josefin Sans', sans-serif;
   }
   
