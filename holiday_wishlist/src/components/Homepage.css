@@ -55,6 +55,17 @@ a:hover{
   margin-right: 20px;
 }
 
+.homepagesubtitle {
+  margin: 40px 0px 50px 0px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.description-link {
+  color: rgb(50, 59, 56);
+  
+}
+
 .countdownsubtitle {
   font-size: 45px;
   text-align: center;
@@ -200,6 +211,13 @@ span {
     margin-right: 0px;
   }
   
+  .homepagesubtitle {
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+
   .countdowncontainer { 
     flex-direction: column;
   }

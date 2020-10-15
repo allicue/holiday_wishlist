@@ -6,7 +6,7 @@ import EditList from './EditList';
 import Footer from "./Footer";
 import './Homepage.css';
 import NavBar from './NavBar';
-import { Route } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import ViewList from './ViewList';
 
 
@@ -41,8 +41,9 @@ function Homepage(props) {
       </div>
       
       <Route exact path="/">
-      <div>
-        <h2 className="countdownsubtitle">COUNTDOWN UNTIL</h2>
+        <div>
+          <h3 className="homepagesubtitle">Create a wishlist of items to send to your family and friends this holiday season. Get started by building your list <NavLink className="description-link" to="/editlist">here</NavLink>.</h3>
+          <h2 className="countdownsubtitle">COUNTDOWN UNTIL</h2>
           <div className="countdowncontainer">
             <section className="christmascontainer">
               <CountdownChristmas /> 
