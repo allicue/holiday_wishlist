@@ -1,7 +1,8 @@
 .delete-button {
   width: 30px;
-  margin-top: 0px;
-  margin-left: 300px;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 20px;
 }
 
 .delete-button:hover{
@@ -13,7 +14,7 @@ background-color: grey;
 @media only screen and (max-width: 600px) {
   
   .delete-button {
-    margin-left: 250px;
+    margin-left: 190px;
   }
 
 }

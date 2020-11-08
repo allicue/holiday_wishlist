@@ -10,7 +10,7 @@ function ViewList(props) {
       <Switch>
       <Route path="/viewlist">
         <h2 className="subheaderviewwishlist">WISHLIST</h2>
-        <h3 className="captionviewwishlist">If you purchased an item below, click on the item name to cross it off.</h3>
+        {/* <h3 className="captionviewwishlist">If you purchased an item below, click on the item name to cross it off.</h3> */}
 
         {props.listItems && 
           <div className="wishlistcontainer">
