@@ -1,6 +1,5 @@
 .App {
   height: 100%;
-  margin-bottom: 150px;
 }
 
 header {
@@ -43,7 +42,7 @@ a {
 
 a:hover{
   cursor: pointer;
-  text-decoration: underline;
+  text-shadow: 5px 5px 5px rgba(85, 85, 85, 0.2);
   }
 
 .navbarlinka {
@@ -86,7 +85,6 @@ span {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* got the background image in the containers to darken using the gradient code here https://css-tricks.com/design-considerations-text-images/ */
 .christmascontainer {
   background-color: rgb(192, 207, 202);
   color: white;
@@ -122,28 +120,26 @@ span {
 
 .footer{
   background-color: rgb(192, 207, 202);
-  position: fixed;
-  left: 0;
+  display: flex;
+  margin-top: 15px;
   bottom: 0;
-  right: 0;
   width: 100%;
-  height: 80px;
+  height: 50px;
 }
 
 .socialmediacontainer {
   display: flex;
   align-items: center;
-  padding: 10px;
   margin-left: 40px;
 }
 
 #github{
-  width: 80px;
+  width: 60px;
   padding-left: 20px;
 }
 
 #linkedin {
-  width: 50px;
+  width: 30px;
 }
 
 /* TABLET BREAKPOINT */
@@ -248,7 +244,7 @@ span {
   }
   
   #github{
-    width: 80px;
+    width: 60px;
     padding-left: 20px;
   }
   
